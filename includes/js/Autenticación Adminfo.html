@@ -1,0 +1,1766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>:: Autenticación Adminfo ::</title>
+    <link href="Autenticaci%C3%B3n%20Adminfo_files/autenticacion.css" rel="stylesheet" type="text/css">
+<link href="Autenticaci%C3%B3n%20Adminfo_files/sexyalertbox.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="http://localhost:8080/smart/imagenes/icon.png?cache=1">
+    <script type="text/javascript" src="Autenticaci%C3%B3n%20Adminfo_files/jquery.js"></script>
+    <script type="text/javascript" src="Autenticaci%C3%B3n%20Adminfo_files/jquery-ui-1.js"></script>
+    <script type="text/javascript" src="Autenticaci%C3%B3n%20Adminfo_files/jquery_002.js"></script>
+    <script type="text/javascript" src="Autenticaci%C3%B3n%20Adminfo_files/php.js"></script>
+    <!--[if lt IE 8]>
+        <script type="text/javascript" src="js/noie.js"></script>
+    <![endif]-->
+    <script type="text/javascript"> require_once('http://localhost:8080/smart/js/autenticacion.js'); </script><script type="text/javascript">/**
+ * Este codigo ejecuta la logica
+ * para mostrar un slide de las novedades
+ * en la ventana de autenticacion.
+ */
+$(function() {
+    setTimeout(function() {
+        $("#invalid-user").slideUp(1000);
+    }, 3000)
+    // carga inicial de una novedad.
+    $("#novedades-text").load("index.php?rtr=mantenimiento&ctr=novedades&acc=novedad&xpag=1&pag=1", function() {});
+
+    $("#usuario").focus();
+    $("#novedades-box").hide();
+    $("a#novedades#").click(function(e) {
+        e.preventDefault();
+        $("#novedades-box").slideToggle(200);
+    });
+
+    $("#novIzq").live('click', function(o) {
+        o.preventDefault();
+        $("#novedades-text").load($("#novIzq").attr('href'), function() {});
+    });
+
+    $("#novDer").live('click', function(o) {
+        o.preventDefault();
+        $("#novedades-text").load($("#novDer").attr('href'), function() {});
+    });
+});
+
+//Cambiar SRC de una imagen
+function CambiarImagen(strDiv, strRuta) {
+    Ahora = new Date();
+    hora = Ahora.getHours();
+    minuto = Ahora.getMinutes();
+    segundo = Ahora.getSeconds();
+    cache = hora + "" + minuto + "" + segundo;
+    document.getElementById(strDiv).src = strRuta + "&cache=" + cache;
+}</script>
+<script type="text/javascript"> require_once('http://localhost:8080/smart/js/password-meter.js'); </script><script type="text/javascript">/**
+**    Original File: password-meter.js
+**    Created by: Rene Schwietzke (mail@03146f06.net)
+**    Created on: 2008-12-01
+**    Last modified: 2010-05-03
+**    Version: 1.0.2
+**
+**    License Information:
+**    -------------------------------------------------------------------------
+**    Copyright (C) 2008 Rene Schwietzke
+**
+**    This program is free software; you can redistribute it and/or modify it
+**    under the terms of the GNU General Public License as published by the
+**    Free Software Foundation; either version 2 of the License, or (at your
+**    option) any later version.
+**    
+**    This program is distributed in the hope that it will be useful, but
+**    WITHOUT ANY WARRANTY; without even the implied warranty of
+**    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+**    General Public License for more details.
+**    
+**    You should have received a copy of the GNU General Public License along
+**    with this program; if not, write to the Free Software Foundation, Inc.,
+**    59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+**    
+**    Based on original work by Jeff Todnem published under GPL 2.
+** 
+**    Original File: pwd_meter.js (http://www.passwordmeter.com/)
+**    Created by: Jeff Todnem (http://www.todnem.com/)
+**
+**    History:
+**    -------------------------------------------------------------------------
+**    v1.0.0 : initial version
+**    v1.0.1 : fixed rounding problem by adjusting float2str
+**    v1.0.2 : fixed influence of redundancy on long passwords. More bad
+**             characters after a good start should not be punished
+**    v1.1.0 : Introduced significance to cover the case of old system, where you
+**             can type in long passwords, but only the first 8 characters are
+**             considered. So now, the first characters are more important
+**             and a good end cannot fix the password when it started bad.
+**
+**    ToDo: 
+**    -------------------------------------------------------------------------
+**    * Punish first or last letter uppercase characters only
+**    * Punish special characters only at the end
+**    * Punish numbers only at the end
+**    * Filter common patterns, such as 12.12.2008 12/20/2009 2008-12-13
+**    * Seem to contain a year 19XX or 20XX
+**/
+PasswordMeter.prototype = ( 
+{		
+	// the version of the password meter
+	version: "1.1.0",
+	
+	COMPLEXITY:
+	{
+	    VERYWEAK: 0,
+	    WEAK: 1,
+	    GOOD: 2,
+	    STRONG: 3,
+	    VERYSTRONG: 4
+	},
+	
+	STATUS:
+	{
+	    FAILED: 0,
+	    PASSED: 1,
+	    EXCEEDED: 2
+	},
+	
+    // little string helper to reverse a string
+    strReverse: function(str) 
+    {
+        var newstring = "";
+        for (var s = 0; s < str.length; s++) 
+        {
+            newstring = str.charAt(s) + newstring;
+        }
+        return newstring;
+    },
+    
+    int2str: function(aNumber) 
+    {
+		if (aNumber == 0) 
+		{
+			return "0";
+		}
+		else 
+		{
+			return parseInt(aNumber, 10);
+		}
+    },
+
+    float2str: function(aNumber) 
+    {
+		if (aNumber == 0) 
+		{
+			return "0.00";
+		}
+		else 
+		{
+			return parseFloat(aNumber.toFixed(2));
+		}
+    },
+
+	// helper for the status
+	// <0 failed
+	// 0  passed
+	// >0 exceeded
+	determineStatus: function(aNumber)
+	{
+		if (aNumber == 0) 
+		{ 
+			return this.STATUS.PASSED;
+		}
+		else if (aNumber > 0) 
+		{ 
+			return this.STATUS.EXCEEDED;
+		}
+		else 
+		{ 
+			return this.STATUS.FAILED;
+		}
+	},
+	
+	// helper for the status
+	// 0  passed
+	// !=0 failed
+	determineBinaryStatus: function(aNumber)
+	{
+		if (aNumber == 0) 
+		{ 
+			return this.STATUS.PASSED;
+		}
+		else 
+		{ 
+			return this.STATUS.FAILED;
+		}
+	}
+});
+
+function PasswordMeter()
+{
+	this.Score = 
+	{
+		count: 0,
+		adjusted: 0,
+		beforeRedundancy: 0
+	};
+	
+	// the complexity index
+	this.Complexity = 
+	{
+		limits: [20, 50, 60, 90, 100],
+		value: this.COMPLEXITY.VERYWEAK
+	};
+	
+	// the length of the password
+	this.PasswordLength =
+	{
+		count  : 0,
+		minimum: 6,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0.5, // per character bonus
+		bonus  : 10, // minimum reached? Get a bonus.
+		penalty: -20 // if we stay under minimum, we get punished
+	};
+	
+	// recommended password length
+	this.RecommendedPasswordLength = 
+	{
+		count  : 0,
+		minimum: 10,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 1.2,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// Basic requirements are:
+	// 1) Password Length
+	// 2) Uppercase letter use
+	// 3) Lowercase letter use
+	// 4) Numeric character use
+	// 5) Symbol use
+	this.BasicRequirements =
+	{
+		count  : 0, 
+		minimum: 3, // have to be matched to get the bonus
+		formula: "TBD", 
+		status : this.STATUS.FAILED, 
+		rating : 0, 
+		factor : 1, 
+		bonus  : 10, 
+		penalty: -10
+	};
+	
+	// how much redundancy is permitted, if the password is
+	// long enough. we will skip the redudancy penalty if this
+	// number is not exceeded (meaning redundancy < this number)
+	this.Redundancy =
+	{
+		value    : 1, // 1 means, not double characters, default to start
+		permitted: 2.0, // 2 means, in average every character can occur twice
+		formula  : "TBD",
+		status   : this.STATUS.FAILED,
+		rating   : 0
+	};
+	
+	// number of uppercase letters, such as A-Z	
+	this.UppercaseLetters =
+	{
+		count  : 0,
+		minimum: 1,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -40
+	};
+	
+	// number of lowercase letters, such as a-z	
+	this.LowercaseLetters =
+	{
+		count  : 0,
+		minimum: 1,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// number of numeric characters
+	this.Numerics =
+	{
+		count  : 0,
+		minimum: 2,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// number of symbol characters
+	this.Symbols =
+	{
+		count  : 0,
+		minimum: 1,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// number of dedicated symbols in the middle
+	this.MiddleSymbols =
+	{
+		count  : 0,
+		minimum: 1,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// number of dedicated numbers in the middle
+	this.MiddleNumerics = 
+	{
+		count  : 0,
+		minimum: 1,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 10,
+		penalty: -10
+	};
+	
+	// how many sequential characters should be checked
+	// such as "abc" or "MNO" to be not part of the password
+	this.SequentialLetters = 
+	{
+		data: "abcdefghijklmnopqrstuvwxyz",
+		length: 3,
+		
+		count: 0,
+		
+		formula: "TBD",
+		status: this.STATUS.FAILED,
+		rating: 0,
+		factor: -1,
+		bonus: 0,
+		penalty: -30
+	};
+	
+	// how many sequential characters should be checked
+	// such as "123" to be not part of the password
+	this.SequentialNumerics =
+	{
+		data: "0123456789",
+		length: 3,
+		
+		count: 0,
+		
+		formula: "TBD",
+		status: this.STATUS.FAILED,
+		rating: 0,
+		factor: -1,
+		bonus: 0,
+		penalty: -30
+	};
+
+	// keyboard patterns to check, typical sequences from your
+	// keyboard
+	this.KeyboardPatterns =
+	{
+		// german and english keyboard text
+		data: [	"qwertzuiop", "asdfghjkl", "yxcvbnm", "!\"§$%&/()=", // de
+				"1234567890", // de numbers
+				"qaywsxedcrfvtgbzhnujmik,ol.pö-üä+#", // de up-down
+			   
+			    "qwertyuiop", "asdfghjkl", "zyxcvbnm", "!@#$%^&*()_", // en
+				"1234567890", // en numbers
+		        "qazwsxedcrfvtgbyhnujmik,ol.p;/[']\\" // en up-down
+		],
+		length: 4, // how long is the pattern to check and blame for?
+		
+		count: 0, // how much of these pattern can be found
+		
+		formula: "TBD",
+		status: this.STATUS.FAILED,
+		rating: 0,
+		factor: -1, // each occurence is punished with that factor
+		bonus: 0,
+		penalty: -10
+	};
+
+	// check for repeated sequences, like in catcat
+	this.RepeatedSequences = 
+	{
+		length: 3,
+
+		count  : 0,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 0,
+		penalty: -20
+	};
+
+	// check for repeated sequences, like in catcat
+	this.MirroredSequences = 
+	{
+		length: 3,
+
+		count  : 0,
+		formula: "TBD",
+		status : this.STATUS.FAILED,
+		rating : 0,
+		factor : 0,
+		bonus  : 0,
+		penalty: -20
+	};
+	
+	// split password data. This means we will split the password
+	// at the position and evaluate both parts independently again.
+	// The final password score is composed of all three components.
+	// (full * weightFull + part1 * weight1 + part2 * weight2).
+	// The sum of the weight should be 1 aka 100% to work good.
+	this.SplitPassword = 
+	{
+		splitPosition: this.RecommendedPasswordLength.minimum,
+		weight1		: 0.80, // weight of part1
+		// weight2		: 0.20, // weight of part2
+		weightFull	: 0.20, // the weight applied to the total score
+		part1		: "", // the split password part1
+		// part2		: "",  // the split password part2
+		part1Score	: 0, 
+		// part2Score	: 0 
+	};
+	
+	// this check our password and sets all object properties accordingly
+    this.checkPassword = function(password, splitPassword)
+    {
+        // do we have data to check?
+        if (!password)
+        {
+            // no, leave
+            password = "";
+        }
+
+		if (!splitPassword)
+		{
+			splitPassword = true;
+		}
+        
+        // check the password and set all values
+        var nTmpAlphaUC = -1;
+        var nTmpAlphaLC = -1;
+        var nTmpNumber  = -1;
+        var nTmpSymbol  = -1;
+
+		// how long is the password?
+        this.PasswordLength.count = password.length;
+        this.RecommendedPasswordLength.count = password.length;
+        
+        // split it, all characters are permitted so far
+        var passwordArray = password.split("");
+
+        // Loop through password to check for Symbol, Numeric, Lowercase 
+		// and Uppercase pattern matches
+        for (var a = 0; a < passwordArray.length; a++) 
+        {
+			// check uppercase letters
+            if (passwordArray[a].match(/[A-Z]/g)) 
+            {
+                if (nTmpAlphaUC != -1) 
+				{ 
+					// check last uppercase position, when the previous one, store
+					// the information
+					if ((nTmpAlphaUC + 1) == a) 
+					{ 
+						this.nConsecutiveUppercaseLetters++; 
+						this.nConsecutiveLetters++; 
+					} 
+				}
+				// store the last uppercase position
+                nTmpAlphaUC = a;
+
+                this.UppercaseLetters.count++;
+            }
+			// check lowercase
+            else if (passwordArray[a].match(/[a-z]/g)) 
+            { 
+                if (nTmpAlphaLC != -1) 
+				{ 
+					if ((nTmpAlphaLC + 1) == a) 
+					{ 
+						this.nConsecutiveLowercaseLetters++; 
+						this.nConsecutiveLetters++; 
+					} 
+				}
+                nTmpAlphaLC = a;
+                this.LowercaseLetters.count++;
+            }
+			// check numeric
+            else if (passwordArray[a].match(/[0-9]/g)) 
+            { 
+                if (a > 0 && a < (passwordArray.length - 1)) 
+				{ 
+					this.MiddleNumerics.count++; 
+				}
+                if (nTmpNumber != -1) 
+				{ 
+					if ((nTmpNumber + 1) == a) 
+					{ 
+						this.nConsecutiveNumbers++; 
+						this.nConsecutiveLetters++; 
+					} 
+				}
+                nTmpNumber = a;
+                this.Numerics.count++;
+            }
+			// check all extra characters
+            else if (passwordArray[a].match(new RegExp(/[^a-zA-Z0-9]/g))) 
+            { 
+                if (a > 0 && a < (passwordArray.length - 1)) 
+				{ 
+					this.MiddleSymbols.count++; 
+				}
+                if (nTmpSymbol != -1) 
+				{ 
+					if ((nTmpSymbol + 1) == a) 
+					{ 
+						this.nConsecutiveSymbols++; 
+						this.nConsecutiveLetters++; 
+					} 
+				}
+                nTmpSymbol = a;
+                this.Symbols.count++;
+            }
+        }
+
+		// check the variance of symbols or better the redundancy
+		// makes only sense for at least two characters
+		if (passwordArray.length > 1) 
+		{
+			var uniqueCharacters = new Array();
+		    for (var a = 0; a < passwordArray.length; a++) 
+			{
+				var found = false;
+				
+				for (var b = a + 1; b < passwordArray.length; b++) 
+				{
+					if (passwordArray[a] == passwordArray[b]) 
+					{
+						found = true;
+					}
+				}
+				if (found == false)
+				{
+					uniqueCharacters.push(passwordArray[a]);
+				}
+			}
+
+			// calculate a redundancy number
+			this.Redundancy.value = passwordArray.length / uniqueCharacters.length;
+		}
+		
+        // Check for sequential alpha string patterns (forward and reverse) but only, if the string
+		// has already a length to check for, does not make sense to check the password "ab" for the
+		// sequential data "abc"
+		var lowercasedPassword = password.toLowerCase();
+
+		if (this.PasswordLength.count >= this.SequentialLetters.length) 
+		{
+			for (var s = 0; s < this.SequentialLetters.data.length - this.SequentialLetters.length; s++) 
+			{
+				var sFwd = this.SequentialLetters.data.substring(s, s + this.SequentialLetters.length);
+				var sRev = this.strReverse(sFwd);
+				
+				if (lowercasedPassword.indexOf(sFwd) != -1) 
+				{
+					this.SequentialLetters.count++;
+				}
+				if (lowercasedPassword.indexOf(sRev) != -1) 
+				{
+					this.SequentialLetters.count++;
+				}
+			}
+		}
+
+		// Check for sequential numeric string patterns (forward and reverse)
+		if (this.PasswordLength.count >= this.SequentialNumerics.length)
+		{	
+			for (var s = 0; s < this.SequentialNumerics.data.length - this.SequentialNumerics.length; s++) 
+			{
+				var sFwd = this.SequentialNumerics.data.substring(s, s + this.SequentialNumerics.length);
+				var sRev = this.strReverse(sFwd);
+				
+				if (lowercasedPassword.indexOf(sFwd) != -1) 
+				{
+					this.SequentialNumerics.count++;
+				}
+				if (lowercasedPassword.indexOf(sRev) != -1) 
+				{
+					this.SequentialNumerics.count++;
+				}
+			}
+		}
+
+		// Check common keyboard patterns
+		var patternsMatched = new Array();
+		if (this.PasswordLength.count >= this.KeyboardPatterns.length)
+		{	
+			for (p in this.KeyboardPatterns.data) 
+			{
+				var pattern = this.KeyboardPatterns.data[p];
+				
+				for (var s = 0; s < pattern.length - this.KeyboardPatterns.length; s++) 
+				{
+					var sFwd = pattern.substring(s, s + this.KeyboardPatterns.length);
+					var sRev = this.strReverse(sFwd);
+					
+					if (lowercasedPassword.indexOf(sFwd) != -1) 
+					{
+						if (patternsMatched[sFwd] == undefined) 
+						{
+							this.KeyboardPatterns.count++;
+							patternsMatched[sFwd] = sFwd;
+						}
+					}
+					if (lowercasedPassword.indexOf(sRev) != -1) 
+					{
+						if (patternsMatched[sRev] == undefined) 
+						{
+							this.KeyboardPatterns.count++;
+							patternsMatched[sRev] = sRev;
+						}
+					}
+				}
+			}
+		}
+
+        // Try to find repeated sequences of characters.
+		if (this.PasswordLength.count > this.RepeatedSequences.length) 
+		{
+			for (var s = 0; s < lowercasedPassword.length - this.RepeatedSequences.length; s++) 
+			{
+				var sFwd = lowercasedPassword.substring(s, s + this.RepeatedSequences.length);
+				
+				var result = lowercasedPassword.indexOf(sFwd, s + this.RepeatedSequences.length);
+				if (result != -1) 
+				{
+					this.RepeatedSequences.count++;
+				}
+			}
+		}
+
+        // Try to find mirrored sequences of characters.
+		if (this.PasswordLength.count > this.MirroredSequences.length) 
+		{
+			for (var s = 0; s < lowercasedPassword.length - this.MirroredSequences.length; s++) 
+			{
+				var sFwd = lowercasedPassword.substring(s, s + this.MirroredSequences.length);
+				var sRev = this.strReverse(sFwd);
+				
+				var result = lowercasedPassword.indexOf(sRev, s + this.MirroredSequences.length);
+				if (result != -1) 
+				{
+					this.MirroredSequences.count++;
+				}
+			}
+		}
+
+		//*************************************************************************
+		//* Initial score based on length
+		//*************************************************************************
+        this.Score.count = this.PasswordLength.count * this.PasswordLength.factor;
+		
+		//*************************************************************************
+		//* PasswordLength
+		//* credit additional length or punish "under" length
+		//*************************************************************************
+		if (this.PasswordLength.count < this.PasswordLength.minimum)
+		{
+			this.PasswordLength.rating = this.PasswordLength.penalty;
+		}
+		else if (this.PasswordLength.count >= this.PasswordLength.minimum)
+		{
+			// credit additional characters over minimum
+			this.PasswordLength.rating  = this.PasswordLength.bonus + 
+				(this.PasswordLength.count - this.PasswordLength.minimum) * this.PasswordLength.factor;
+		}
+		this.Score.count += this.PasswordLength.rating;
+
+		//*************************************************************************
+		//* RecommendedPasswordLength
+		//* Credit reaching the recommended password length or put a 
+		//* penalty on it
+		//*************************************************************************
+		if (this.PasswordLength.count >= this.RecommendedPasswordLength.minimum)
+		{
+			this.RecommendedPasswordLength.rating = 
+								this.RecommendedPasswordLength.bonus +
+								(this.PasswordLength.count - this.RecommendedPasswordLength.minimum) * this.RecommendedPasswordLength.factor;
+		}
+		else
+		{
+			this.RecommendedPasswordLength.rating = this.RecommendedPasswordLength.penalty;
+		}
+		this.Score.count += this.RecommendedPasswordLength.rating;
+
+		//*************************************************************************
+		//* LowercaseLetters
+		//* Honor or punish the Lowercase letter use
+		//*************************************************************************
+		if (this.LowercaseLetters.count > 0) 
+		{	
+			this.LowercaseLetters.rating = this.LowercaseLetters.bonus + (this.LowercaseLetters.count * this.LowercaseLetters.factor);
+		}
+		else
+		{
+			this.LowercaseLetters.rating = this.LowercaseLetters.penalty;
+		}
+		this.Score.count += this.LowercaseLetters.rating;
+
+		//*************************************************************************
+		//* UppercaseLetters
+		//* Honor or punish the uppercase letter use
+		//*************************************************************************
+		if (this.UppercaseLetters.count > 0) 
+		{	
+			this.UppercaseLetters.rating = this.UppercaseLetters.bonus + (this.UppercaseLetters.count * this.UppercaseLetters.factor);
+		}
+		else
+		{
+			this.UppercaseLetters.rating = this.UppercaseLetters.penalty;
+		}
+		this.Score.count += this.UppercaseLetters.rating;
+		
+		//*************************************************************************
+		//* Numerics
+		//* Honor or punish the Numerics letter use
+		//*************************************************************************
+		if (this.Numerics.count > 0) 
+		{	
+			this.Numerics.rating = this.Numerics.bonus + (this.Numerics.count * this.Numerics.factor);
+		}
+		else
+		{
+			this.Numerics.rating = this.Numerics.penalty;
+		}
+		this.Score.count += this.Numerics.rating;
+
+		//*************************************************************************
+		//* Symbols
+		//* Honor or punish the Symbols letter use
+		//*************************************************************************
+		if (this.Symbols.count > 0) 
+		{	
+			this.Symbols.rating = this.Symbols.bonus + (this.Symbols.count * this.Symbols.factor);
+		}
+		else
+		{
+			this.Symbols.rating = this.Symbols.penalty;
+		}
+		this.Score.count += this.Symbols.rating;
+
+		//*************************************************************************
+		//* MiddleSymbols
+		//* Honor or punish the MiddleSymbols letter use
+		//*************************************************************************
+		if (this.MiddleSymbols.count > 0) 
+		{	
+			this.MiddleSymbols.rating = this.MiddleSymbols.bonus + (this.MiddleSymbols.count * this.MiddleSymbols.factor);
+		}
+		else
+		{
+			this.MiddleSymbols.rating = this.MiddleSymbols.penalty;
+		}
+		this.Score.count += this.MiddleSymbols.rating;
+
+		//*************************************************************************
+		//* MiddleNumerics
+		//* Honor or punish the MiddleNumerics letter use
+		//*************************************************************************
+		if (this.MiddleNumerics.count > 0) 
+		{	
+			this.MiddleNumerics.rating = this.MiddleNumerics.bonus + (this.MiddleNumerics.count * this.MiddleNumerics.factor);
+		}
+		else
+		{
+			this.MiddleNumerics.rating = this.MiddleNumerics.penalty;
+		}
+		this.Score.count += this.MiddleNumerics.rating;
+
+		//*************************************************************************
+		//* SequentialLetters
+		//* Honor or punish the SequentialLetters letter use
+		//*************************************************************************
+		if (this.SequentialLetters.count == 0) 
+		{	
+			this.SequentialLetters.rating = this.SequentialLetters.bonus;
+		}
+		else
+		{
+			this.SequentialLetters.rating = this.SequentialLetters.penalty + (this.SequentialLetters.count * this.SequentialLetters.factor);
+		}
+		this.Score.count += this.SequentialLetters.rating;
+
+		//*************************************************************************
+		//* SequentialNumerics
+		//* Honor or punish the SequentialNumerics letter use
+		//*************************************************************************
+		if (this.SequentialNumerics.count == 0) 
+		{	
+			this.SequentialNumerics.rating = this.SequentialNumerics.bonus;
+		}
+		else
+		{
+			this.SequentialNumerics.rating = this.SequentialNumerics.penalty + (this.SequentialNumerics.count * this.SequentialNumerics.factor);
+		}
+		this.Score.count += this.SequentialNumerics.rating;
+
+		//*************************************************************************
+		//* KeyboardPatterns
+		//* Honor or punish the KeyboardPatterns letter use
+		//*************************************************************************
+		if (this.KeyboardPatterns.count == 0) 
+		{	
+			this.KeyboardPatterns.rating = this.KeyboardPatterns.bonus;
+		}
+		else
+		{
+			this.KeyboardPatterns.rating = this.KeyboardPatterns.penalty + (this.KeyboardPatterns.count * this.KeyboardPatterns.factor);
+		}
+		this.Score.count += this.KeyboardPatterns.rating;
+
+		//*************************************************************************
+		//* Count our BasicRequirements and set the status
+		//*************************************************************************
+		this.BasicRequirements.count = 0;
+
+		// password length
+		this.PasswordLength.status = this.determineStatus(this.PasswordLength.count - this.PasswordLength.minimum);
+		if (this.PasswordLength.status != this.STATUS.FAILED)
+		{
+			// requirement met
+			this.BasicRequirements.count++; 
+		}
+
+		// uppercase letters
+		this.UppercaseLetters.status = this.determineStatus(this.UppercaseLetters.count - this.UppercaseLetters.minimum);
+		if (this.UppercaseLetters.status != this.STATUS.FAILED)
+		{
+			// requirement met
+			this.BasicRequirements.count++; 
+		}
+
+		// lowercase letters
+		this.LowercaseLetters.status = this.determineStatus(this.LowercaseLetters.count - this.LowercaseLetters.minimum);
+		if (this.LowercaseLetters.status != this.STATUS.FAILED)
+		{
+			// requirement met
+			this.BasicRequirements.count++; 
+		}
+
+		// numerics
+		this.Numerics.status = this.determineStatus(this.Numerics.count - this.Numerics.minimum);
+		if (this.Numerics.status != this.STATUS.FAILED)
+		{
+			// requirement met
+			this.BasicRequirements.count++; 
+		}
+
+		// symbols
+		this.Symbols.status = this.determineStatus(this.Symbols.count - this.Symbols.minimum);
+		if (this.Symbols.status != this.STATUS.FAILED)
+		{
+			// requirement met
+			this.BasicRequirements.count++; 
+		}
+
+		// judge the requirement status
+		this.BasicRequirements.status = this.determineStatus(this.BasicRequirements.count - this.BasicRequirements.minimum);
+		if (this.BasicRequirements.status != this.STATUS.FAILED)
+		{
+			this.BasicRequirements.rating = 
+							this.BasicRequirements.bonus + 
+							(this.BasicRequirements.factor * this.BasicRequirements.count);
+		}
+		else
+		{
+			this.BasicRequirements.rating = this.BasicRequirements.penalty;				
+		}
+		this.Score.count += this.BasicRequirements.rating;
+
+		// no basic requirements
+		this.RecommendedPasswordLength.status = this.determineStatus(this.PasswordLength.count - this.RecommendedPasswordLength.minimum);
+		this.MiddleNumerics.status = this.determineStatus(this.MiddleNumerics.count - this.MiddleNumerics.minimum);
+		this.MiddleSymbols.status = this.determineStatus(this.MiddleSymbols.count - this.MiddleSymbols.minimum);
+		this.SequentialLetters.status = this.determineBinaryStatus(this.SequentialLetters.count);
+		this.SequentialNumerics.status = this.determineBinaryStatus(this.SequentialNumerics.count);
+		this.KeyboardPatterns.status = this.determineBinaryStatus(this.KeyboardPatterns.count);
+
+		this.RepeatedSequences.status = this.determineBinaryStatus(this.RepeatedSequences.count);
+		this.MirroredSequences.status = this.determineBinaryStatus(this.MirroredSequences.count);
+
+		// we apply them only, if the length is not awesome ;)
+		if (this.RecommendedPasswordLength.status != this.STATUS.EXCEEDED)
+		{
+			//*************************************************************************
+			//* RepeatedSequences
+			//* Honor or punish the RepeatedSequences letter use
+			//*************************************************************************
+			if (this.RepeatedSequences.count == 0) 
+			{	
+				this.RepeatedSequences.rating = this.RepeatedSequences.bonus;
+			}
+			else
+			{
+				this.RepeatedSequences.rating = this.RepeatedSequences.penalty + (this.RepeatedSequences.count * this.RepeatedSequences.factor);
+			}
+			this.Score.count += this.RepeatedSequences.rating;
+
+			//*************************************************************************
+			//* MirroredSequences
+			//* Punish the MirroredSequences
+			//*************************************************************************
+			if (this.MirroredSequences.count == 0) 
+			{	
+				this.MirroredSequences.rating = this.MirroredSequences.bonus;
+			}
+			else
+			{
+				this.MirroredSequences.rating = this.MirroredSequences.penalty + (this.MirroredSequences.count * this.MirroredSequences.factor);
+			}
+			this.Score.count += this.MirroredSequences.rating;
+		}
+
+		// save value before redundancy
+		this.Score.beforeRedundancy = this.Score.count;
+
+		// apply the redundancy
+		// is the password length requirement fulfilled?
+		if (this.RecommendedPasswordLength.status != this.STATUS.EXCEEDED) 
+		{
+			// full penalty, because password is not long enough, only for a positive score
+			if (this.Score.count > 0) 
+			{
+				this.Score.count = this.Score.count * (1 / this.Redundancy.value);
+			}
+		}
+
+		// level it out
+		if (this.Score.count > 100) 
+		{ 
+			this.Score.adjusted = 100; 
+		} 
+		else if (this.Score.count < 0) 
+		{ 
+			this.Score.adjusted = 0; 
+		}
+		else
+		{
+			this.Score.adjusted = this.Score.count;
+		}
+		
+		// the final twist. The first part (recommended length for now) has to have a good meaning,
+		// because some legacy system only evaluate the beginning and do use the rest.
+		if (this.PasswordLength.count > this.SplitPassword.splitPosition && splitPassword)
+		{
+			var part1 = new PasswordMeter();
+			this.SplitPassword.part1 =  password.substr(0, this.SplitPassword.splitPosition);
+			part1.checkPassword(this.SplitPassword.part1, false);
+			this.SplitPassword.part1Score = part1.Score.adjusted;
+
+			/*
+			var part2 = new PasswordMeter();
+			this.SplitPassword.part2 = password.substr(this.SplitPassword.splitPosition);
+			part2.checkPassword(this.SplitPassword.part2, false);
+			this.SplitPassword.part2Score = part2.Score.adjusted;
+			*/ 
+			
+			// ok, the final score is composed of score one and score two		
+			var old = this.Score.count;
+			
+			// do this only, if the first part is not 100%
+			if (this.SplitPassword.part1Score < 100)
+			{
+				this.Score.count = 
+					this.Score.count * this.SplitPassword.weightFull +
+					this.SplitPassword.part1Score * this.SplitPassword.weight1;
+					// this.SplitPassword.part2Score * this.SplitPassword.weight2;
+
+				/*
+				alert("Changed\n" + 
+				password + ": " + old + "\n" +
+				this.SplitPassword.part1 + ": " + this.SplitPassword.part1Score + "\n" + 
+				//this.SplitPassword.part2 + ": " + this.SplitPassword.part2Score + "\n" +
+				"New: " + this.Score.count
+				);*/
+			}
+			else
+			{
+				this.SplitPassword.part1Score = this.Score.count;
+				
+				/*alert("Unchanged\n" + 
+				password + ": " + old + "\n" +
+				this.SplitPassword.part1 + ": " + this.SplitPassword.part1Score + "\n" + 
+				//this.SplitPassword.part2 + ": " + this.SplitPassword.part2Score + "\n" +
+				"New: " + this.Score.count
+				);*/
+			}
+		}
+		else
+		{
+			this.SplitPassword.part1Score = this.Score.count;
+		}
+
+		// level it out again
+		if (this.Score.count > 100) 
+		{ 
+			this.Score.adjusted = 100; 
+		} 
+		else if (this.Score.count < 0) 
+		{ 
+			this.Score.adjusted = 0; 
+		}
+		else
+		{
+			this.Score.adjusted = this.Score.count;
+		}
+
+		// judge it
+		for (var i = 0; i < this.Complexity.limits.length; i++)
+		{
+			if (this.Score.adjusted <= this.Complexity.limits[i])
+			{
+				this.Complexity.value = i;
+				break;
+			}
+		}
+
+		return this.Complexity.value;		
+    };
+}
+
+
+
+
+/**
+ * js Adaptado a adminfo */
+
+	function checkPassword()
+	{
+		// get the input field
+		var passwordField = $("#password");
+		
+		
+
+		// get the value, basically the password
+		var password = passwordField.val();
+
+		var oldStatus = passwordField.data("prePassword");
+		if (oldStatus == password)
+		{
+			// no change, leave and do nothing
+			return;
+		}
+		passwordField.data("prePassword", password);
+
+		var pm = new PasswordMeter();
+		pm.checkPassword(password);
+
+		$("#score").html(pm.int2str(pm.Score.adjusted));
+
+
+		
+		// set complexity
+		var complexity = pm.Complexity.value;
+		var indicator = $("#complexity");
+		var indicator2 = $("#complexity2");
+
+		// remove class
+		indicator2.removeClass("veryweak weak good strong verystrong");
+	
+		if (complexity == pm.COMPLEXITY.VERYWEAK)
+		{
+			indicator.html("No Válida");
+			puntaje(10);
+		}
+		else if (complexity == pm.COMPLEXITY.WEAK)
+		{
+			indicator.html("Débil");
+			puntaje(30);
+		}
+		else if (complexity == pm.COMPLEXITY.GOOD)
+		{
+			indicator.html("Buena");
+			puntaje(50);
+		}
+		else if (complexity == pm.COMPLEXITY.STRONG)
+		{
+			indicator.html("Fuerte");
+			puntaje(75);
+		}
+		else if (complexity == pm.COMPLEXITY.VERYSTRONG)
+		{
+			indicator.html("Segura!");
+			puntaje(100);
+		}
+		var usu = $("#nomUsuario").val();
+		if (passwordField.val().toLowerCase().indexOf(usu) != -1){
+			indicator.html("Contiene Usuario");
+			puntaje(10);
+			$("#score").html('0');
+		}
+		var emp = $("#nomEmpresa").val();
+		if (passwordField.val().toLowerCase().indexOf(emp) != -1){
+			indicator.html("Contiene Empresa");
+			puntaje(10);
+			$("#score").html('0');
+		}
+		var cc = $("#nomCasaCobranza").val();
+		if(cc == '')
+				return;
+		if (passwordField.val().toLowerCase().indexOf(cc) != -1){
+			indicator.html("Contiene Casa Cobranza");
+			puntaje(10);
+			$("#score").html('0');
+		}
+		if (passwordField.val().toLowerCase().indexOf('&') != -1){
+			indicator.html("Contiene Ampersand (&)");
+			puntaje(10);
+			$("#score").html('0');
+		}
+		
+	}
+
+var tempScore = 0;
+function puntaje(score)
+{
+	if(tempScore != score)
+	{
+		tempScore = score;
+		$("#complexity2").animate({
+			width: score
+		}, 500, function() {
+			// Animation complete.
+			if(score == 100)
+			{
+				
+				$("#complexity2").animate({
+					opacity:0
+					
+				}, 500, function() {
+						// Animation complete.
+						$("#complexity2").animate({
+						opacity:1
+						
+						}, 500, function() {
+							// Animation complete.
+						
+					});
+				});
+			}
+	  });
+	  
+	}
+	
+}
+
+
+function verificarIgualdad(pwd2)
+{
+	if($("#password").val() != pwd2)
+	{
+		mensajeErrorCampo($("#password2"),'Las Claves No Son Iguales',false);
+		return true;
+	}
+		
+	else
+		mensajeErrorCampo($("#password2"),'Las Claves No Son Iguales',true);
+}
+</script>
+<script type="text/javascript"> require_once('http://localhost:8080/smart/js/sexyalertbox.v1.2.jquery.js'); </script><script type="text/javascript">/**
+ * Sexy Alert Box - for mootools 1.2 - jQUery 1.3
+ * @name sexyalertbox.v1.2.js
+ * @author Eduardo D. Sada - http://www.coders.me/web-js-html/javascript/sexy-alert-box
+ * @version 1.2.1
+ * @date 27-Feb-2009
+ * @copyright (c) 2009 Eduardo D. Sada (www.coders.me)
+ * @license MIT - http://es.wikipedia.org/wiki/Licencia_MIT
+ * @example http://www.coders.me/ejemplos/sexy-alert-box/
+ * @based in <PBBAcpBox> (Pokemon_JOJO, <http://www.mibhouse.org/pokemon_jojo>)
+ * @thanks to Pokemon_JOJO!
+ * @features:
+ * * Chain Implemented (Cola de mensajes)
+ * * More styles (info, error, alert, prompt, confirm)
+ * * ESC would close the window
+ * * Focus on a default button
+*/
+
+/*
+Class: SexyAlertBox
+	Clone class of original javascript function : 'alert', 'confirm' and 'prompt'
+
+Arguments:
+	options - see Options below
+
+Options:
+	name - name of the box for use different style
+	zIndex - integer, zindex of the box
+	onReturn - return value when box is closed. defaults to false
+	onReturnFunction - a function to fire when return box value
+	BoxStyles - stylesheets of the box
+	OverlayStyles - stylesheets of overlay
+	showDuration - duration of the box transition when showing (defaults to 200 ms)
+	showEffect - transitions, to be used when showing
+	closeDuration - Duration of the box transition when closing (defaults to 100 ms)
+	closeEffect - transitions, to be used when closing
+	onShowStart - a function to fire when box start to showing
+	onCloseStart - a function to fire when box start to closing
+	onShowComplete - a function to fire when box done showing
+	onCloseComplete - a function to fire when box done closing
+*/
+$(document).ready(function(){
+  Sexy.initialize();
+});
+
+jQuery.bind = function(object, method){
+  var args = Array.prototype.slice.call(arguments, 2);  
+  return function() {
+    var args2 = [this].concat(args, $.makeArray( arguments ));  
+    return method.apply(object, args2);  
+  };  
+};  
+
+/*
+Esta funcion sobreescribe el metodo de jquery y hace que entren en conflicto
+desabilitarla no arece ocacionar roblemas
+revisar.
+
+jQuery.fn.delay = function(time,func){
+	return this.each(function(){
+		//setTimeout(func,time);
+	});
+};
+*/
+
+jQuery.fn.extend({
+  $chain : [],
+  chain: function(fn) {
+    this.$chain.push(fn);
+    return this;
+  },
+  callChain: function(context) {
+    return (this.$chain.length) ? this.$chain.pop().apply(context, arguments) : false;
+  },
+  clearChain: function(){
+    this.$chain.empty();
+    return this;
+  }
+});
+
+(function($) {
+
+  Sexy = {
+    getOptions: function() {
+      return {
+        name            : 'SexyAlertBox',
+        zIndex          : 65555,
+        onReturn        : false,
+        onReturnFunction: function(e) {},
+        BoxStyles       : { 'width': 500 },
+        OverlayStyles   : { 'backgroundColor': '#000', 'opacity': 0.7 },
+        showDuration    : 200,
+        closeDuration   : 100,
+        moveDuration    : 500,
+        onCloseComplete : $.bind(this, function() {
+          this.options.onReturnFunction(this.options.onReturn);
+        })
+      };
+    },
+
+
+    initialize: function(options) {
+      this.i=0;
+      this.options = $.extend(this.getOptions(), options);
+			$('body').append('<div id="BoxOverlay"></div><div id="'+this.options.name+'-Box"><div id="'+this.options.name+'-InBox"><div id="'+this.options.name+'-BoxContent"><div id="'+this.options.name+'-BoxContenedor"></div></div></div></div>');
+			
+			this.Content    = $('#'+this.options.name+'-BoxContenedor');
+			this.Contenedor = $('#'+this.options.name+'-BoxContent');
+			this.InBox      = $('#'+this.options.name+'-InBox');
+			this.Box        = $('#'+this.options.name+'-Box');
+			
+			$('#BoxOverlay').css({
+        position        : 'absolute',
+        top             : 0,
+        left            : 0,
+				opacity         : this.options.OverlayStyles.opacity,
+				backgroundColor : this.options.OverlayStyles.backgroundColor,
+				'z-index'       : this.options.zIndex,
+        height          : $(document).height(),
+				width           : $(document).width()
+			}).hide();
+			
+			this.Box.css({
+        display         : 'none',
+        position        : 'absolute',
+        top             : 0,
+        left            : 0,
+				'z-index'       : this.options.zIndex + 2,
+				width           : this.options.BoxStyles.width + 'px'
+			});
+
+     // this.preloadImages();
+
+      $(window).bind('resize', $.bind(this, function(){
+        if(this.options.display == 1) {
+          $('#BoxOverlay').css({
+            height          : 0,
+            width           : 0
+          });
+          $('#BoxOverlay').css({
+            height          : $(document).height(),
+            width           : $(document).width()
+          });
+          this.replaceBox();
+        }
+      }));
+
+      this.Box.bind('keydown', $.bind(this, function(obj, event){
+        if (event.keyCode == 27){
+          this.options.onReturn = false;
+          this.display(0);
+        }      
+      }));
+
+      $(window).bind('scroll', $.bind(this, function(){
+        this.replaceBox();
+      }));
+			
+    },
+
+    replaceBox: function() {
+      if(this.options.display == 1) {
+        
+        this.Box.stop();
+        
+        this.Box.animate({
+          left  : ( ($(document).width() - this.options.BoxStyles.width) / 2),
+          top   : ( $(document).scrollTop() + ($(window).height() - this.Box.outerHeight()) / 2 )
+        }, {
+          duration  : this.options.moveDuration,
+          easing    : 'easeOutBack'
+        });
+
+        $(this).delay(this.options.moveDuration, $.bind(this, function() {
+          $('#BoxAlertBtnOk').focus();
+          $('#BoxPromptInput').focus();
+          $('#BoxConfirmBtnOk').focus();
+        }));
+      }
+    },
+
+    display: function(option) {
+      if(this.options.display == 0 && option != 0 || option == 1) {
+
+
+        if (!$.support.maxHeight) { //IE6
+          $('embed, object, select').css({ 'visibility' : 'hidden' });
+        }
+
+
+        this.togFlashObjects('hidden');
+
+        this.options.display = 1;
+
+
+        $('#BoxOverlay').stop();
+        $('#BoxOverlay').fadeIn(this.options.showDuration, $.bind(this, function(){
+          this.Box.css({
+            display         : 'block',
+            left            : ( ($(document).width() - this.options.BoxStyles.width) / 2)
+          });
+          this.replaceBox();
+        }));
+      
+      } else {
+
+        this.Box.css({
+          display         : 'none',
+          top             : 0
+        });
+
+        this.options.display = 0;
+
+        $(this).delay(500, $.bind(this, this.queue));
+
+        $(this.Content).empty();
+        this.Content.removeClass();
+
+        if(this.i==1) {
+          $('#BoxOverlay').stop();
+          $('#BoxOverlay').fadeOut(this.options.closeDuration, $.bind(this, function(){
+            $('#BoxOverlay').hide();
+            if (!$.support.maxHeight) { //IE6
+              $('embed, object, select').css({ 'visibility' : 'visible' });
+            }
+
+            this.togFlashObjects('visible');
+
+            this.options.onCloseComplete.call();
+          }));
+        }
+      }
+    },
+
+    messageBox: function(type, message, properties, input) {
+        
+        $(this).chain(function () {
+
+        properties = $.extend({
+          'textBoxBtnOk'        : 'Aceptar',
+          'textBoxBtnCancel'    : 'Cancelar',
+          'textBoxInputPrompt'  : null,
+          'password'            : false,
+          'onComplete'          : function(e) {}
+        }, properties || {});
+
+        this.options.onReturnFunction = properties.onComplete;
+
+        this.Content.append('<div id="'+this.options.name+'-Buttons"></div>');
+        if(type == 'alert' || type == 'info' || type == 'error')
+        {
+            $('#'+this.options.name+'-Buttons').append('<input id="BoxAlertBtnOk" type="submit" />');
+            
+            $('#BoxAlertBtnOk').val(properties.textBoxBtnOk).css({'width':70});
+            
+            $('#BoxAlertBtnOk').bind('click', $.bind(this, function(){
+              this.options.onReturn = true;
+              this.display(0);
+            }));
+                      
+            if(type == 'alert') {
+              clase = 'BoxAlert';
+            } else if(type == 'error') {
+              clase = 'BoxError';
+            } else if(type == 'info') {
+              clase = 'BoxInfo';
+            }
+            
+            this.Content.addClass(clase).prepend(message);
+            this.display(1);
+
+        }
+        else if(type == 'confirm')
+        {
+
+            $('#'+this.options.name+'-Buttons').append('<input id="BoxConfirmBtnOk" type="submit" /> <input id="BoxConfirmBtnCancel" type="submit" />');
+            $('#BoxConfirmBtnOk').val(properties.textBoxBtnOk).css({'width':70});
+            $('#BoxConfirmBtnCancel').val(properties.textBoxBtnCancel).css({'width':70});
+
+            $('#BoxConfirmBtnOk').bind('click', $.bind(this, function(){
+              this.options.onReturn = true;
+              this.display(0);
+            }));
+
+            $('#BoxConfirmBtnCancel').bind('click', $.bind(this, function(){
+              this.options.onReturn = false;
+              this.display(0);
+            }));
+
+            this.Content.addClass('BoxConfirm').prepend(message);
+            this.display(1);
+        }
+        else if(type == 'prompt')
+        {
+
+            $('#'+this.options.name+'-Buttons').append('<input id="BoxPromptBtnOk" type="submit" /> <input id="BoxPromptBtnCancel" type="submit" />');
+            $('#BoxPromptBtnOk').val(properties.textBoxBtnOk).css({'width':70});
+            $('#BoxPromptBtnCancel').val(properties.textBoxBtnCancel).css({'width':70});
+                        
+            type = properties.password ? 'password' : 'text';
+
+            this.Content.prepend('<input id="BoxPromptInput" type="'+type+'" />');
+            $('#BoxPromptInput').val(properties.input);
+            $('#BoxPromptInput').css({'width':250});
+
+            $('#BoxPromptBtnOk').bind('click', $.bind(this, function(){
+              this.options.onReturn = $('#BoxPromptInput').val();
+              this.display(0);
+            }));
+
+            $('#BoxPromptBtnCancel').bind('click', $.bind(this, function(){
+              this.options.onReturn = false;
+              this.display(0);
+            }));
+
+            this.Content.addClass('BoxPrompt').prepend(message + '<br />');
+            this.display(1);
+        }
+        else
+        {
+            this.options.onReturn = false;
+            this.display(0);		
+        }
+
+      });
+
+      this.i++;
+
+      if(this.i==1) {
+        $(this).callChain(this);
+      }
+    },
+
+    queue: function() {
+      this.i--;
+      $(this).callChain(this);
+    },
+
+    chk: function (obj) {
+      return !!(obj || obj === 0);
+    },
+
+    togFlashObjects: function(state) {
+      var hideobj=new Array("embed", "iframe", "object");
+      for (y = 0; y < hideobj.length; y++) {
+       var objs = document.getElementsByTagName(hideobj[y]);
+       for(i = 0; i < objs.length; i++) {
+        objs[i].style.visibility = state;
+       }
+      }
+    },
+
+    preloadImages: function() {
+      var img = new Array(2);
+      img[0] = new Image();img[1] = new Image();img[2] = new Image();
+      img[0].src = this.Box.css('background-image').replace(new RegExp("url\\('?([^']*)'?\\)", 'gi'), "$1");
+      img[1].src = this.InBox.css('background-image').replace(new RegExp("url\\('?([^']*)'?\\)", 'gi'), "$1");
+      img[2].src = this.Contenedor.css('background-image').replace(new RegExp("url\\('?([^']*)'?\\)", 'gi'), "$1");
+      
+    },
+    
+
+    /*
+    Property: alert
+      Shortcut for alert
+      
+    Argument:
+      properties - see Options in messageBox
+    */		
+    alert: function(message, properties) {
+      this.messageBox('alert', message, properties);
+    },
+
+    /*
+    Property: info
+      Shortcut for alert info
+      
+    Argument:
+      properties - see Options in messageBox
+    */		
+    info: function(message, properties){
+      this.messageBox('info', message, properties);
+    },
+
+    /*
+    Property: error
+      Shortcut for alert error
+      
+    Argument:
+      properties - see Options in messageBox
+    */		
+    error: function(message, properties){
+      this.messageBox('error', message, properties);
+    },
+
+    /*
+    Property: confirm
+      Shortcut for confirm
+      
+    Argument:
+      properties - see Options in messageBox
+    */
+    confirm: function(message, properties){
+      this.messageBox('confirm', message, properties);
+    },
+
+    /*
+    Property: prompt
+      Shortcut for prompt
+      
+    Argument:
+      properties - see Options in messageBox
+    */	
+    prompt: function(message, input, properties){
+      this.messageBox('prompt', message, properties, input);
+    }
+
+  };
+
+})(jQuery);</script>
+<script>
+    window.name='las87kas';
+</script>
+</head>
+<body>
+    <link rel="stylesheet" href="Autenticaci%C3%B3n%20Adminfo_files/index.html">
+<link href="Autenticaci%C3%B3n%20Adminfo_files/css.css" rel="stylesheet" type="text/css">
+
+<script src=""></script>
+
+
+
+
+    <script>
+    $(document).ready(function() {
+        /* Centramos Login */
+        centrarVerticalmente('wrapper');
+        centrarVerticalmente('logoAdminfo');
+        centrarDiv('nubesSolati');
+        centrarHorizontalmente('bySolati');
+        
+        $(window).resize(function(){
+            centrarVerticalmente('wrapper');
+            centrarVerticalmente('logoAdminfo');
+            centrarDiv('nubesSolati');
+            centrarHorizontalmente('bySolati');
+         });
+
+
+        $("#wrapper").fadeIn(1000);
+        $("#wrapper").draggable({ handle: '#login-head' ,cursor: 'pointer',containment: 'document'});
+
+    });
+
+
+function centrarDiv(id)
+{
+      $("#"+id).css({
+        left: ($(window).width() - $("#"+id).outerWidth())/2,
+        top: ($(window).height() - $("#"+id).outerHeight())/2
+    });
+}
+
+
+function centrarHorizontalmente(id)
+{
+      $("#"+id).css({
+         left: ($(window).width() - $("#"+id).outerWidth())/2,
+    });
+}
+
+function centrarVerticalmente(id)
+{
+      $("#"+id).css({
+         top: ($(window).height() - $("#"+id).outerHeight())/2
+    });
+}
+
+</script>
+
+
+<!-- Carrusel de imagenes fondo autenticación -->
+<ul class="cb-slideshow">
+    <li><span></span></li>
+    <li><span></span></li>
+    <li><span></span></li>
+</ul>
+<!-- Fin carrusel de imagenes fondo autenticación -->
+
+
+    <div id="logoAdminfo" style="top: 380px;">
+        <img src="Autenticaci%C3%B3n%20Adminfo_files/logo-adminfo-color.png" alt="logo-adminfo-smart">
+    </div>
+
+    <div id="nubesSolati" style="left: 511px; top: 380px;">
+        <img src="Autenticaci%C3%B3n%20Adminfo_files/nubes-adminfo-smart.png" alt="nubes-adminfo-smart">
+    </div>
+
+    <div id="bySolati" style="left: 700.5px;">
+        <img src="Autenticaci%C3%B3n%20Adminfo_files/logo-solati-mono.png">
+    </div>
+
+    <div id="wrapper" style="top: 286.5px;" class="ui-draggable">
+        <div id="login-box" class="box">
+            
+                        
+            <div id="login-head">
+                <div id="login-label">
+                    Bienvenido a <img src="Autenticaci%C3%B3n%20Adminfo_files/logo-adminfo-mono.png" alt="logo-adminfo-smart-mono">
+                </div>
+            </div>
+
+
+            <form method="post" autocomplete="off" id="autenticacionFrm" action="http://localhost:8080/smart/index.php?rtr=mantenimiento&amp;ctr=autenticacion&amp;acc=validar">
+
+                <div id="login-bar"></div>
+                <div id="login-bottom-bar"></div>
+
+                <div id="login-content">
+
+                        <div class="etiqueta">Usuario</div>
+                        <div class="caja"><input autocomplete="off" name="usuario" id="usuario" type="text" maxlength="50" placeholder="usuario" autofocus=""></div>
+
+                        <div class="etiqueta">Clave</div>
+                        <div class="caja"><input name="clave" id="clave" type="password" placeholder="Digite su Clave" maxlength="50"></div>
+                        
+                                                
+                        <div class="entrar">
+                            <button class="botonLogin" style="margin-top: 20px;">Entrar</button>
+                        </div>
+                </div>
+            </form>
+                    </div>
+
+    </div>
+
+    <div id="copyright">
+        Sol@ti, Soluciones Latinas Ltda.<br>
+        Cr. 43 A 1SUR-220 OF 708 EDIFICIO PORVENIR. Medellín - Colombia PBX: (574) 268 7551<br>
+        Email: soporte@solati.com.co - adminfo@solati.com.co<br>
+    </div>
+
+<script type="text/javascript">
+            $("#autenticacionFrm #login-content .botonLogin").css('margin-top', '20px');
+    
+    var penalizacion = '';
+
+    $(document).ready(function() {
+        if (parseInt(penalizacion) > 0) {
+            require_once("js/noty/jquery.noty.js");
+            require_once("js/noty/layouts/bottomLeft.js");
+            require_once("js/noty/themes/default.js");
+            
+            var msg = "Debe esperar "+ penalizacion +" segundos para intentar ingresar nuevamente";
+            var n = noty({
+                layout: 'bottomLeft',
+                text: msg,
+                type: 'error',
+                dismissQueue: true,
+                timeout: penalizacion * 1000
+            });
+
+            setTimeout(function(){ 
+                window.location.href = "index.php?rtr=mantenimiento&ctr=autenticacion&acc=index";
+            }, penalizacion * 1000);
+        }
+    });
+</script>
+
+
+
+<div id="BoxOverlay" style="position: absolute; top: 0px; left: 0px; opacity: 0.7; background-color: rgb(0, 0, 0); z-index: 65555; height: 775px; width: 1525px; display: none;"></div><div id="SexyAlertBox-Box" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 65557; width: 500px;"><div id="SexyAlertBox-InBox"><div id="SexyAlertBox-BoxContent"><div id="SexyAlertBox-BoxContenedor"></div></div></div></div></body></html>

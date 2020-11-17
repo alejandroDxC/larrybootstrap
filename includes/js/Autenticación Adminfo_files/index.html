@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>:: Autenticaci&oacute;n Adminfo ::</title>
+    <link href="http://localhost:8080/smart/css/autenticacion.css" rel="stylesheet" type="text/css">
+<link href="http://localhost:8080/smart/css/sexyalertbox.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="http://localhost:8080/smart/imagenes/icon.png?cache=1" />
+    <script type="text/javascript" src="http://localhost:8080/smart/js/jquery.estable.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/smart/js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/smart/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/smart/js/php.min.js"></script>
+    <!--[if lt IE 8]>
+        <script type="text/javascript" src="js/noie.js"></script>
+    <![endif]-->
+    <script type='text/javascript'> require_once('http://localhost:8080/smart/js/autenticacion.js'); </script>
+<script type='text/javascript'> require_once('http://localhost:8080/smart/js/password-meter.js'); </script>
+<script type='text/javascript'> require_once('http://localhost:8080/smart/js/sexyalertbox.v1.2.jquery.js'); </script>
+<script>
+    window.name='las87kas';
+</script>
+</head>
+<body>
+    <link rel="stylesheet" href="http://localhost:8080/smart/index.php?/css/general.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css">
+
+<script src=''></script>
+
+
+
+
+    <script>
+    $(document).ready(function() {
+        /* Centramos Login */
+        centrarVerticalmente('wrapper');
+        centrarVerticalmente('logoAdminfo');
+        centrarDiv('nubesSolati');
+        centrarHorizontalmente('bySolati');
+        
+        $(window).resize(function(){
+            centrarVerticalmente('wrapper');
+            centrarVerticalmente('logoAdminfo');
+            centrarDiv('nubesSolati');
+            centrarHorizontalmente('bySolati');
+         });
+
+
+        $("#wrapper").fadeIn(1000);
+        $("#wrapper").draggable({ handle: '#login-head' ,cursor: 'pointer',containment: 'document'});
+
+    });
+
+
+function centrarDiv(id)
+{
+      $("#"+id).css({
+        left: ($(window).width() - $("#"+id).outerWidth())/2,
+        top: ($(window).height() - $("#"+id).outerHeight())/2
+    });
+}
+
+
+function centrarHorizontalmente(id)
+{
+      $("#"+id).css({
+         left: ($(window).width() - $("#"+id).outerWidth())/2,
+    });
+}
+
+function centrarVerticalmente(id)
+{
+      $("#"+id).css({
+         top: ($(window).height() - $("#"+id).outerHeight())/2
+    });
+}
+
+</script>
+
+
+<!-- Carrusel de imagenes fondo autenticación -->
+<ul class="cb-slideshow">
+    <li><span></span></li>
+    <li><span></span></li>
+    <li><span></span></li>
+</ul>
+<!-- Fin carrusel de imagenes fondo autenticación -->
+
+
+    <div id="logoAdminfo">
+        <img src="/smart/imagenes//logos/logo-adminfo-color.png" alt="logo-adminfo-smart">
+    </div>
+
+    <div id="nubesSolati">
+        <img src="/smart/imagenes//login/nubes-adminfo-smart.png" alt="nubes-adminfo-smart">
+    </div>
+
+    <div id="bySolati">
+        <img src="/smart/imagenes//login/logo-solati-mono.png">
+    </div>
+
+    <div id="wrapper" style="display:none">
+        <div id="login-box" class="box">
+            
+                        
+            <div id="login-head">
+                <div id="login-label">
+                    Bienvenido a <img src="/smart/imagenes//logos/logo-adminfo-mono.png" alt="logo-adminfo-smart-mono">
+                </div>
+            </div>
+
+
+            <form method="post" autocomplete="off" id="autenticacionFrm" action="http://localhost:8080/smart/index.php?rtr=mantenimiento&ctr=autenticacion&acc=validar">
+
+                <div id="login-bar"></div>
+                <div id="login-bottom-bar"></div>
+
+                <div id="login-content">
+
+                        <div class="etiqueta">Usuario</div>
+                        <div class="caja"><input autocomplete="off" name="usuario" id="usuario" type="text" maxlength="50" autocomplete="off" placeholder="usuario" autofocus /></div>
+
+                        <div class="etiqueta">Clave</div>
+                        <div class="caja"><input name="clave" id="clave" type="password" placeholder="Digite su Clave" maxlength="50" /></div>
+                        
+                                                
+                        <div class="entrar">
+                            <button class="botonLogin">Entrar</button>
+                        </div>
+                </div>
+            </form>
+                    </div>
+
+    </div>
+
+    <div id="copyright">
+        Sol@ti, Soluciones Latinas Ltda.<br>
+        Cr. 43 A 1SUR-220 OF 708 EDIFICIO PORVENIR. Medellín - Colombia PBX: (574) 268 7551<br>
+        Email: soporte@solati.com.co - adminfo@solati.com.co<br>
+    </div>
+
+<script type="text/javascript">
+            $("#autenticacionFrm #login-content .botonLogin").css('margin-top', '20px');
+    
+    var penalizacion = '';
+
+    $(document).ready(function() {
+        if (parseInt(penalizacion) > 0) {
+            require_once("js/noty/jquery.noty.js");
+            require_once("js/noty/layouts/bottomLeft.js");
+            require_once("js/noty/themes/default.js");
+            
+            var msg = "Debe esperar "+ penalizacion +" segundos para intentar ingresar nuevamente";
+            var n = noty({
+                layout: 'bottomLeft',
+                text: msg,
+                type: 'error',
+                dismissQueue: true,
+                timeout: penalizacion * 1000
+            });
+
+            setTimeout(function(){ 
+                window.location.href = "index.php?rtr=mantenimiento&ctr=autenticacion&acc=index";
+            }, penalizacion * 1000);
+        }
+    });
+</script>
+
+
+</body>
+</html>

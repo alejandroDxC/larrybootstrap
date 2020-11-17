@@ -1,0 +1,649 @@
+[16-May-2011 10:55:59] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aromero_unidad6'@'localhost' (using password: YES) in /home/aromero/public_html/cap6y7/conect.php on line 5
+[16-May-2011 11:05:05] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 90
+[16-May-2011 11:11:51] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 93
+[16-May-2011 11:15:14] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aromero_unidad6'@'localhost' (using password: YES) in /home/aromero/public_html/cap6y7/conect.php on line 5
+[16-May-2011 11:15:22] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aromero_unidad6'@'localhost' (using password: YES) in /home/aromero/public_html/cap6y7/conect.php on line 5
+[16-May-2011 11:15:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aromero_unidad6'@'localhost' (using password: YES) in /home/aromero/public_html/cap6y7/conect.php on line 5
+[16-May-2011 11:59:30] PHP Fatal error:  Call to undefined function  now() in /home/aromero/public_html/cap6y7/register.php on line 88
+[16-May-2011 15:14:14] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/conect.php on line 11
+[16-May-2011 15:14:35] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/conect.php on line 11
+[16-May-2011 15:14:38] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/conect.php on line 11
+[16-May-2011 15:14:39] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/conect.php on line 11
+[16-May-2011 15:14:59] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/conect.php on line 11
+[16-May-2011 15:15:47] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 104
+[16-May-2011 15:16:29] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 104
+[16-May-2011 15:16:38] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 104
+[16-May-2011 15:26:22] PHP Warning:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 9
+[16-May-2011 16:53:30] PHP Fatal error:  Function name must be a string in /home/aromero/public_html/cap6y7/view_users.php on line 3
+[16-May-2011 17:15:06] PHP Warning:  require_once(/onect.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/view_users.php on line 5
+[16-May-2011 17:15:06] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/onect.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/view_users.php on line 5
+[17-May-2011 09:31:36] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:32:13] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:36:36] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:37:07] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:38:24] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:38:39] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:39:36] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:50:32] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 09:50:35] PHP Warning:  mysql_num_rows(): 4 is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 37
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:17:26] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:20:22] PHP Warning:  mysql_real_escape_string() [<a href='function.mysql-real-escape-string'>function.mysql-real-escape-string</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/register.php on line 17
+[17-May-2011 10:34:34] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/register.php on line 156
+[17-May-2011 14:43:36] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 67
+[17-May-2011 14:45:38] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 68
+[17-May-2011 14:49:14] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 68
+[17-May-2011 14:53:02] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 68
+[17-May-2011 14:54:29] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 68
+[17-May-2011 14:56:16] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 68
+[17-May-2011 14:57:15] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/change_password.php on line 67
+[17-May-2011 14:57:15] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:00:32] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:01:33] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:01:39] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:03:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:07:34] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:08:31] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:08:42] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:14:54] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:19:06] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:27:43] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 69
+[17-May-2011 15:48:20] PHP Warning:  mysql_real_escape_string() expects parameter 2 to be resource, null given in /home/aromero/public_html/cap6y7/change_password.php on line 25
+[17-May-2011 15:56:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:06:23] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:10:28] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:12:36] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:12:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:25:05] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:25:13] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 16:31:12] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 70
+[17-May-2011 16:32:47] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 70
+[17-May-2011 16:44:02] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 70
+[17-May-2011 16:49:01] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 70
+[17-May-2011 16:51:34] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 70
+[17-May-2011 16:56:03] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 72
+[17-May-2011 17:00:46] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 17:10:03] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[17-May-2011 17:52:24] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/change_password.php on line 71
+[18-May-2011 16:13:35] PHP Warning:  mysql_real_escape_string() expects parameter 2 to be resource, null given in /home/aromero/public_html/cap6y7/login.php on line 19
+[18-May-2011 16:13:35] PHP Warning:  mysql_real_escape_string() expects parameter 2 to be resource, null given in /home/aromero/public_html/cap6y7/login.php on line 19
+[18-May-2011 16:21:29] PHP Warning:  mysql_real_escape_string() expects parameter 2 to be resource, null given in /home/aromero/public_html/cap6y7/login.php on line 19
+[18-May-2011 16:21:29] PHP Warning:  mysql_real_escape_string() expects parameter 2 to be resource, null given in /home/aromero/public_html/cap6y7/login.php on line 19
+[19-May-2011 09:19:47] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 60
+[19-May-2011 09:19:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 61
+[19-May-2011 09:19:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 62
+[19-May-2011 09:26:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 60
+[19-May-2011 09:26:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 61
+[19-May-2011 09:26:08] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 62
+[19-May-2011 11:40:32] PHP Fatal error:  Call to undefined function  escape_data() in /home/aromero/public_html/cap6y7/login.php on line 25
+[19-May-2011 11:41:10] PHP Fatal error:  Call to undefined function  escape_data() in /home/aromero/public_html/cap6y7/login.php on line 37
+[19-May-2011 11:41:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 11:41:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 11:41:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 11:43:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 11:43:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 11:43:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 11:56:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 11:56:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 11:56:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 15:11:32] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/register.php on line 92
+[19-May-2011 15:14:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/register.php on line 88
+[19-May-2011 15:20:02] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/register.php on line 86
+[19-May-2011 15:21:17] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/register.php on line 86
+[19-May-2011 15:31:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 15:31:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 15:31:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[19-May-2011 15:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 15:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 15:44:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[19-May-2011 15:46:08] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or '$' in /home/aromero/public_html/cap6y7/login.php on line 80
+[19-May-2011 15:47:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 15:47:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 15:47:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[19-May-2011 15:52:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 15:52:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 54
+[19-May-2011 15:52:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[19-May-2011 16:07:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[19-May-2011 16:07:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 56
+[19-May-2011 16:07:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 57
+[19-May-2011 16:08:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 49
+[19-May-2011 16:08:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 50
+[19-May-2011 16:08:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 51
+[19-May-2011 16:10:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 51
+[19-May-2011 16:10:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 16:10:01] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 16:11:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 51
+[19-May-2011 16:11:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 16:11:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 16:14:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 51
+[19-May-2011 16:14:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 16:14:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 16:15:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 51
+[19-May-2011 16:15:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 52
+[19-May-2011 16:15:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 53
+[19-May-2011 16:16:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:44) in /home/aromero/public_html/cap6y7/login.php on line 47
+[19-May-2011 16:16:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:44) in /home/aromero/public_html/cap6y7/login.php on line 48
+[19-May-2011 16:16:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:44) in /home/aromero/public_html/cap6y7/login.php on line 49
+[20-May-2011 11:42:04] PHP Warning:  Wrong parameter count for ereg() in /home/aromero/public_html/cap6y7/register.php on line 16
+[20-May-2011 15:26:09] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/register.php on line 165
+[20-May-2011 15:26:53] PHP Warning:  include(validarEmail.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:26:53] PHP Warning:  include(validarEmail.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:26:53] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'validarEmail.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:27:14] PHP Warning:  include(./validarEmail.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:27:14] PHP Warning:  include(./validarEmail.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:27:14] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './validarEmail.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/register.php on line 5
+[20-May-2011 15:39:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 15:40:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 15:51:03] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 15:52:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 15:52:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 15:52:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:5) in /home/aromero/public_html/cap6y7/login.php on line 55
+[20-May-2011 16:27:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:51) in /home/aromero/public_html/cap6y7/login.php on line 54
+[20-May-2011 17:26:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:49) in /home/aromero/public_html/cap6y7/login.php on line 53
+[20-May-2011 18:39:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:5) in /home/aromero/public_html/cap6y7/loggedin.php on line 12
+[20-May-2011 18:39:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:5) in /home/aromero/public_html/cap6y7/loggedin.php on line 12
+[20-May-2011 18:40:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:5) in /home/aromero/public_html/cap6y7/loggedin.php on line 12
+[20-May-2011 18:40:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:5) in /home/aromero/public_html/cap6y7/loggedin.php on line 12
+[20-May-2011 18:55:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 9
+[20-May-2011 18:56:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 9
+[20-May-2011 18:56:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 9
+[20-May-2011 18:56:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 9
+[20-May-2011 18:56:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 9
+[23-May-2011 09:37:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/loggedin.php:4) in /home/aromero/public_html/cap6y7/loggedin.php on line 8
+[23-May-2011 09:38:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:49) in /home/aromero/public_html/cap6y7/login.php on line 50
+[23-May-2011 09:39:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:49) in /home/aromero/public_html/cap6y7/login.php on line 50
+[23-May-2011 09:41:10] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:49) in /home/aromero/public_html/cap6y7/login.php on line 50
+[23-May-2011 15:59:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:37) in /home/aromero/public_html/cap6y7/login.php on line 38
+[23-May-2011 16:01:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:38) in /home/aromero/public_html/cap6y7/login.php on line 39
+[23-May-2011 17:56:57] PHP Warning:  Missing argument 1 for authenticate(), called in /home/aromero/public_html/cap6y7/login.php on line 38 and defined in /home/aromero/public_html/cap6y7/authentication.php on line 4
+[23-May-2011 17:56:57] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:4) in /home/aromero/public_html/cap6y7/login.php on line 49
+[23-May-2011 18:12:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:46) in /home/aromero/public_html/cap6y7/login.php on line 60
+[23-May-2011 18:21:19] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:24:12] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:28:30] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:29:02] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:30:18] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:31:06] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:32:44] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:34:56] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[23-May-2011 18:35:34] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[24-May-2011 09:16:02] PHP Fatal error:  Cannot redeclare conectarse() (previously declared in /home/aromero/public_html/cap6y7/conect.php:4) in /home/aromero/public_html/cap6y7/conect.php on line 25
+[24-May-2011 09:22:55] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 77
+[24-May-2011 10:08:19] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:12) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:08:19] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:12) in /home/aromero/public_html/cap6y7/login.php on line 65
+[24-May-2011 10:24:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:12) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:24:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:12) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:33:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 71
+[24-May-2011 10:37:23] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 71
+[24-May-2011 10:41:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:41:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:43:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:43:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:43:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:43:42] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:44:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:17) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:44:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:17) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:46:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:24) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:46:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:24) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:46:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:22) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:46:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:22) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:46:54] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 71
+[24-May-2011 10:47:05] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:22) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:47:05] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:22) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:48:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:48:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:49:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:49:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:51:03] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:51:03] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:52:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 10:52:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:20) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 10:52:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 71
+[24-May-2011 11:01:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:41) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 11:01:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:41) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 11:08:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 11:08:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 11:13:31] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 11:13:31] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 11:19:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 61
+[24-May-2011 11:19:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 63
+[24-May-2011 11:32:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:41) in /home/aromero/public_html/cap6y7/login.php on line 53
+[24-May-2011 11:34:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:41) in /home/aromero/public_html/cap6y7/login.php on line 54
+[24-May-2011 11:34:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:41) in /home/aromero/public_html/cap6y7/login.php on line 54
+[24-May-2011 11:39:23] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 11:39:43] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 11:40:02] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/login.php on line 58
+[24-May-2011 11:41:21] PHP Parse error:  syntax error, unexpected T_ELSE in /home/aromero/public_html/cap6y7/login.php on line 58
+[24-May-2011 11:45:00] PHP Parse error:  syntax error, unexpected T_ELSE in /home/aromero/public_html/cap6y7/login.php on line 58
+[24-May-2011 11:56:21] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 11:56:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 11:56:28] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 11:56:28] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 11:59:06] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 11:59:06] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 11:59:06] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:00:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:00:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:00:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:00:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:00:31] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:00:31] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:03:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:03:00] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:03:00] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:03:42] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:03:42] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:03:42] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:04:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:04:33] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:04:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:06:41] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:06:41] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:06:41] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:07:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:07:20] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:07:20] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:07:30] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:07:30] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 46
+[24-May-2011 12:07:30] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 78
+[24-May-2011 12:08:53] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 47
+[24-May-2011 12:08:53] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 47
+[24-May-2011 12:08:53] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 79
+[24-May-2011 12:11:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 48
+[24-May-2011 12:11:16] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 48
+[24-May-2011 12:11:16] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 80
+[24-May-2011 12:13:46] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[24-May-2011 12:14:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 48
+[24-May-2011 12:14:22] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 48
+[24-May-2011 12:14:22] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 80
+[24-May-2011 14:27:00] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/login.php on line 73
+[24-May-2011 14:30:06] PHP Warning:  Missing argument 1 for Authenticate(), called in /home/aromero/public_html/cap6y7/login.php on line 38 and defined in /home/aromero/public_html/cap6y7/authentication.php on line 7
+[24-May-2011 14:30:06] PHP Warning:  Missing argument 2 for Authenticate(), called in /home/aromero/public_html/cap6y7/login.php on line 38 and defined in /home/aromero/public_html/cap6y7/authentication.php on line 7
+[24-May-2011 14:30:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 60
+[24-May-2011 14:30:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 62
+[24-May-2011 14:43:45] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 72
+[24-May-2011 14:44:29] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 72
+[24-May-2011 14:48:38] PHP Parse error:  syntax error, unexpected '=' in /home/aromero/public_html/cap6y7/authentication.php on line 9
+[24-May-2011 14:59:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:8) in /home/aromero/public_html/cap6y7/login.php on line 52
+[24-May-2011 15:12:05] PHP Warning:  Missing argument 1 for Authenticate(), called in /home/aromero/public_html/cap6y7/login.php on line 38 and defined in /home/aromero/public_html/cap6y7/authentication.php on line 5
+[24-May-2011 15:12:05] PHP Warning:  Missing argument 2 for Authenticate(), called in /home/aromero/public_html/cap6y7/login.php on line 38 and defined in /home/aromero/public_html/cap6y7/authentication.php on line 5
+[24-May-2011 15:12:05] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:5) in /home/aromero/public_html/cap6y7/login.php on line 52
+[24-May-2011 15:25:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 59
+[24-May-2011 15:25:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 60
+[24-May-2011 15:26:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 52
+[24-May-2011 15:27:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 52
+[24-May-2011 15:29:02] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:17) in /home/aromero/public_html/cap6y7/login.php on line 52
+[24-May-2011 15:29:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 59
+[24-May-2011 15:29:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 60
+[24-May-2011 15:30:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 59
+[24-May-2011 15:30:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 60
+[24-May-2011 15:30:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 59
+[24-May-2011 15:30:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 60
+[24-May-2011 15:37:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 15:37:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:15) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 15:47:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:32) in /home/aromero/public_html/cap6y7/login.php on line 51
+[24-May-2011 15:48:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:38) in /home/aromero/public_html/cap6y7/login.php on line 53
+[24-May-2011 15:48:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:8) in /home/aromero/public_html/cap6y7/login.php on line 50
+[24-May-2011 15:51:20] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:11) in /home/aromero/public_html/cap6y7/login.php on line 50
+[24-May-2011 15:52:06] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 50
+[24-May-2011 15:53:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 15:53:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 15:53:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 15:53:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 16:15:08] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 68
+[24-May-2011 16:54:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 16:54:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 17:03:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 17:03:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:19:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:19:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:19:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:19:54] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:27:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 50
+[24-May-2011 18:28:28] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/aromero/public_html/cap6y7/authentication.php on line 13
+[24-May-2011 18:30:15] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/aromero/public_html/cap6y7/authentication.php on line 13
+[24-May-2011 18:35:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:35:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:37:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:37:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:37:47] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:37:47] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:38:03] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:38:03] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:38:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:38:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:39:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:39:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:40:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:40:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:41:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:41:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:50:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:50:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:53:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:53:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 18:54:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 18:54:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:05:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:05:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:09:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:09:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:12:11] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 66
+[24-May-2011 19:16:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:16:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:17:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:17:34] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:17:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:17:55] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[24-May-2011 19:18:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 56
+[24-May-2011 19:18:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:7) in /home/aromero/public_html/cap6y7/login.php on line 57
+[25-May-2011 17:19:42] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/register.php on line 17
+[25-May-2011 17:26:37] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/register.php on line 17
+[25-May-2011 17:42:52] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '/' found in /home/aromero/public_html/cap6y7/register.php on line 17
+[25-May-2011 18:59:35] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 66
+[26-May-2011 10:12:08] PHP Parse error:  syntax error, unexpected T_STRING in /home/aromero/public_html/cap6y7/authentication.php on line 21
+[26-May-2011 10:17:10] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/aromero/public_html/cap6y7/authentication.php on line 16
+[26-May-2011 10:17:10] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[26-May-2011 10:17:58] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/aromero/public_html/cap6y7/authentication.php on line 16
+[26-May-2011 10:17:58] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[26-May-2011 10:18:15] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/aromero/public_html/cap6y7/authentication.php on line 16
+[26-May-2011 10:18:15] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[26-May-2011 10:18:25] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/aromero/public_html/cap6y7/authentication.php on line 16
+[26-May-2011 10:18:25] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[26-May-2011 10:19:19] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/aromero/public_html/cap6y7/authentication.php on line 16
+[26-May-2011 10:19:19] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/authentication.php on line 29
+[26-May-2011 10:20:38] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/aromero/public_html/cap6y7/authentication.php on line 17
+[26-May-2011 10:21:38] PHP Parse error:  syntax error, unexpected '{' in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[26-May-2011 10:23:19] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/aromero/public_html/cap6y7/authentication.php on line 24
+[26-May-2011 10:29:39] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 66
+[26-May-2011 10:34:30] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 66
+[26-May-2011 10:35:09] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 66
+[26-May-2011 10:36:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 50
+[26-May-2011 11:08:44] PHP Fatal error:  Cannot use [] for reading in /home/aromero/public_html/cap6y7/login.php on line 52
+[26-May-2011 11:09:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 54
+[26-May-2011 11:50:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:12) in /home/aromero/public_html/cap6y7/logout.php on line 17
+[26-May-2011 11:51:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:15) in /home/aromero/public_html/cap6y7/logout.php on line 19
+[26-May-2011 11:52:31] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:15) in /home/aromero/public_html/cap6y7/logout.php on line 19
+[26-May-2011 11:53:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:15) in /home/aromero/public_html/cap6y7/logout.php on line 19
+[26-May-2011 11:53:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:15) in /home/aromero/public_html/cap6y7/logout.php on line 19
+[26-May-2011 11:54:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:15) in /home/aromero/public_html/cap6y7/logout.php on line 17
+[26-May-2011 12:16:27] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:5) in /home/aromero/public_html/cap6y7/logout.php on line 18
+[26-May-2011 12:16:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:5) in /home/aromero/public_html/cap6y7/logout.php on line 9
+[26-May-2011 12:17:09] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:5) in /home/aromero/public_html/cap6y7/logout.php on line 18
+[26-May-2011 12:17:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:8) in /home/aromero/public_html/cap6y7/logout.php on line 9
+[26-May-2011 12:25:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:5) in /home/aromero/public_html/cap6y7/logout.php on line 20
+[26-May-2011 12:25:47] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/logout.php:5) in /home/aromero/public_html/cap6y7/logout.php on line 20
+[26-May-2011 12:41:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:14) in /home/aromero/public_html/cap6y7/login.php on line 51
+[26-May-2011 14:51:19] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 51
+[26-May-2011 14:51:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:13) in /home/aromero/public_html/cap6y7/login.php on line 51
+[26-May-2011 14:54:59] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[26-May-2011 17:19:04] PHP Warning:  get_browser() [<a href='function.get-browser'>function.get-browser</a>]: browscap ini directive not set in /home/aromero/public_html/cap6y7/header.inc on line 10
+[26-May-2011 17:21:11] PHP Warning:  get_browser() [<a href='function.get-browser'>function.get-browser</a>]: browscap ini directive not set in /home/aromero/public_html/cap6y7/header.inc on line 10
+[26-May-2011 17:21:19] PHP Warning:  get_browser() [<a href='function.get-browser'>function.get-browser</a>]: browscap ini directive not set in /home/aromero/public_html/cap6y7/header.inc on line 10
+[26-May-2011 17:21:23] PHP Warning:  get_browser() [<a href='function.get-browser'>function.get-browser</a>]: browscap ini directive not set in /home/aromero/public_html/cap6y7/header.inc on line 10
+[26-May-2011 17:24:52] PHP Warning:  get_browser() [<a href='function.get-browser'>function.get-browser</a>]: browscap ini directive not set in /home/aromero/public_html/cap6y7/header.inc on line 10
+[27-May-2011 09:50:38] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/aromero/public_html/cap6y7/images.php on line 49
+[27-May-2011 09:51:47] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/aromero/public_html/cap6y7/images.php on line 49
+[27-May-2011 09:52:55] PHP Parse error:  syntax error, unexpected ')', expecting ';' in /home/aromero/public_html/cap6y7/images.php on line 49
+[27-May-2011 10:07:16] PHP Warning:  getimagesize(images/trixie.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:07:16] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/trixie.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:07:16] PHP Warning:  getimagesize(images/kieeeto.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:07:16] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/kieeeto.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:13:52] PHP Warning:  getimagesize(images/trixie.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:13:52] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/trixie.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:13:52] PHP Warning:  getimagesize(images/kieeeto.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:13:52] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/kieeeto.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:14:00] PHP Warning:  getimagesize(images/quindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:14:00] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:14:00] PHP Warning:  getimagesize(images/armenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:14:00] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:15:28] PHP Warning:  getimagesize(/home/aromero/public_html/cap6y7/imagesquindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:15:28] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:15:28] PHP Warning:  getimagesize(/home/aromero/public_html/cap6y7/imagesarmenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:15:28] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:19:57] PHP Warning:  getimagesize(/home/aromero/public_html/cap6y7/imagesquindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:19:57] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:19:57] PHP Warning:  getimagesize(/home/aromero/public_html/cap6y7/imagesarmenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/images.php on line 51
+[27-May-2011 10:19:57] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 53
+[27-May-2011 10:20:28] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/images.phpquindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:20:28] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:20:28] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/images.phparmenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:20:28] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:20:58] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/imagesquindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:20:58] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:20:58] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/imagesarmenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:20:58] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:21:12] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/images/quindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:21:12] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:21:12] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/cap6y7/images/armenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:21:12] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:26:17] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/quindio.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:26:17] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/quindio.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:26:17] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/armenia.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:26:17] PHP Warning:  filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for images/armenia.jpg in /home/aromero/public_html/cap6y7/images.php on line 54
+[27-May-2011 10:27:02] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/quindio.JPG) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:27:02] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/armenia.JPG) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:31:42] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/quindio.JPG) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 10:31:42] PHP Warning:  getimagesize(http://aromero.atlanticsoft.us/home/aromero/public_html/cap6y7/images/armenia.JPG) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/aromero/public_html/cap6y7/images.php on line 52
+[27-May-2011 11:57:07] PHP Warning:  Invalid argument supplied for foreach() in /home/aromero/public_html/cap6y7/images.php on line 58
+[30-May-2011 11:03:55] PHP Fatal error:  Call to undefined function  error() in /home/aromero/public_html/cap6y7/register.php on line 20
+[30-May-2011 11:06:50] PHP Fatal error:  No se puede dividir por cero in /home/aromero/public_html/cap6y7/register.php on line 20
+[30-May-2011 11:07:16] PHP Notice:  No se puede dividir por cero in /home/aromero/public_html/cap6y7/register.php on line 20
+[30-May-2011 16:08:35] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:16) in /home/aromero/public_html/cap6y7/header.inc on line 64
+[30-May-2011 16:10:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:16) in /home/aromero/public_html/cap6y7/header.inc on line 64
+[30-May-2011 16:17:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:16) in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:31:12] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:32:41] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:32:58] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:33:10] PHP Fatal error:  Call to undefined function  redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:19] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:22] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:25] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:33] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:35] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:40] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:35:42] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:45:01] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:48:33] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:49:20] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:49:23] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:49:50] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:50:33] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:50:58] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:51:16] PHP Fatal error:  Call to undefined function  redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:52:34] PHP Fatal error:  Call to undefined function  redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 16:53:57] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 17:03:19] PHP Fatal error:  Call to undefined function  http_redirect() in /home/aromero/public_html/cap6y7/header.inc on line 63
+[30-May-2011 17:31:49] PHP Warning:  include(./errorLogin) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/change_password.php on line 3
+[30-May-2011 17:31:49] PHP Warning:  include(./errorLogin) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/change_password.php on line 3
+[30-May-2011 17:31:49] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './errorLogin' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/change_password.php on line 3
+[30-May-2011 18:29:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:29:15] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:31:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:31:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:32:36] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:33:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:33:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:34:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:34:44] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:34:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:34:52] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:35:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 56
+[30-May-2011 18:35:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:3) in /home/aromero/public_html/cap6y7/login.php on line 60
+[30-May-2011 18:42:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:5) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 18:42:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:5) in /home/aromero/public_html/cap6y7/login.php on line 62
+[30-May-2011 18:46:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:50) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 18:46:11] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:50) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 18:47:24] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:50) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 18:47:24] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:50) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 18:55:53] PHP Parse error:  syntax error, unexpected T_ECHO in /home/aromero/public_html/cap6y7/errorLogin.php on line 13
+[30-May-2011 18:58:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/errorLogin.php:6) in /home/aromero/public_html/cap6y7/errorLogin.php on line 9
+[30-May-2011 19:01:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 19:01:59] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:48) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 19:02:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 19:02:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 19:02:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 19:02:53] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 19:03:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 19:03:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 57
+[30-May-2011 19:03:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 53
+[30-May-2011 19:03:46] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:52) in /home/aromero/public_html/cap6y7/login.php on line 57
+[31-May-2011 09:38:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 54
+[31-May-2011 09:38:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 58
+[31-May-2011 09:40:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 54
+[31-May-2011 09:40:51] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 58
+[31-May-2011 09:41:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 54
+[31-May-2011 09:41:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 58
+[31-May-2011 09:42:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 54
+[31-May-2011 09:42:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 58
+[31-May-2011 09:43:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 55
+[31-May-2011 09:43:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:53) in /home/aromero/public_html/cap6y7/login.php on line 59
+[31-May-2011 09:48:29] PHP Warning:  include(./include.inc) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/add_url.php on line 72
+[31-May-2011 09:48:29] PHP Warning:  include(./include.inc) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/add_url.php on line 72
+[31-May-2011 09:48:29] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './include.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/add_url.php on line 72
+[13-Jul-2011 22:08:42] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/Calculator.php on line 6
+[13-Jul-2011 22:09:33] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/Calculator.php on line 6
+[13-Jul-2011 22:10:09] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/Calculator.php on line 6
+[13-Jul-2011 22:10:16] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/Calculator.php on line 6
+[16-Jul-2011 19:24:42] PHP Warning:  Unterminated comment starting line 118 in /home/aromero/public_html/cap6y7/calendar.php on line 118
+[16-Jul-2011 19:24:42] PHP Fatal error:  fatal flex scanner internal error--end of buffer missed in /home/aromero/public_html/cap6y7/calendar.php on line 118
+[24-Jul-2011 22:26:04] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/register.php on line 131
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[03-Aug-2011 21:31:13] PHP Warning:  Missing argument 6 for my_error_handler() in /home/aromero/public_html/cap6y7/handle.inc.php on line 5
+[06-Aug-2011 00:22:23] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[06-Aug-2011 00:27:32] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[06-Aug-2011 00:28:19] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[06-Aug-2011 00:28:24] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 19:49:46] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 19:49:46] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 17
+[07-Aug-2011 20:28:52] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:28:52] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 17
+[07-Aug-2011 20:31:56] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:31:56] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 17
+[07-Aug-2011 20:36:20] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:36:20] PHP Warning:  mysql_fetch_array() [<a href='function.mysql-fetch-array'>function.mysql-fetch-array</a>]: The result type should be either MYSQL_NUM, MYSQL_ASSOC or MYSQL_BOTH. in /home/aromero/public_html/cap6y7/view_users.php on line 41
+[07-Aug-2011 20:37:38] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:39:42] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:40:37] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 20:42:39] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/view_users.php on line 12
+[07-Aug-2011 22:14:56] PHP Warning:  include(./header.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/delete_user.php on line 2
+[07-Aug-2011 22:14:56] PHP Warning:  include(./header.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/delete_user.php on line 2
+[07-Aug-2011 22:14:56] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './header.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/delete_user.php on line 2
+[07-Aug-2011 22:14:56] PHP Warning:  include(./footer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/delete_user.php on line 23
+[07-Aug-2011 22:14:56] PHP Warning:  include(./footer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/aromero/public_html/cap6y7/delete_user.php on line 23
+[07-Aug-2011 22:14:56] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './footer.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aromero/public_html/cap6y7/delete_user.php on line 23
+[10-Aug-2011 17:23:23] PHP Fatal error:  Call to undefined function  rows() in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:24:10] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:25:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:26:00] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:26:46] PHP Warning:  Wrong parameter count for mysql_num_rows() in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:28:40] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:28:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:29:22] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:29:29] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:33:32] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:34:18] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:34:25] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:34:28] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:48:50] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:53:12] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 17:59:18] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 68
+[10-Aug-2011 19:00:20] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:01:45] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:02:53] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:03:10] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:03:15] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:03:43] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:04:31] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:05:43] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:06:18] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:06:29] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:06:53] PHP Fatal error:  Can't use function return value in write context in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:07:15] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:08:26] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:12:27] PHP Warning:  mysql_affected_rows(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/delete_user.php on line 36
+[10-Aug-2011 19:41:11] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 130
+[10-Aug-2011 19:41:11] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/register.php on line 143
+[13-Aug-2011 16:30:11] PHP Warning:  mysql_affected_rows(): supplied resource is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/edit_user.php on line 68
+[13-Aug-2011 16:30:23] PHP Warning:  mysql_affected_rows(): supplied resource is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/edit_user.php on line 68
+[13-Aug-2011 16:38:27] PHP Warning:  Wrong parameter count for mysql_num_rows() in /home/aromero/public_html/cap6y7/edit_user.php on line 68
+[13-Aug-2011 16:55:18] PHP Warning:  Wrong parameter count for mysql_num_rows() in /home/aromero/public_html/cap6y7/edit_user.php on line 68
+[16-Aug-2011 22:50:52] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/aromero/public_html/cap6y7/view_users.php on line 145
+[16-Aug-2011 23:36:51] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/view_users.php on line 151
+[16-Aug-2011 23:44:52] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 25
+[18-Aug-2011 21:40:42] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/aromero/public_html/cap6y7/view_users.php on line 102
+[18-Aug-2011 21:41:23] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/aromero/public_html/cap6y7/view_users.php on line 103
+[21-Aug-2011 23:42:46] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/aromero/public_html/cap6y7/view_users.php on line 206
+[21-Aug-2011 23:43:30] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/aromero/public_html/cap6y7/view_users.php on line 206
+[21-Aug-2011 23:43:35] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/aromero/public_html/cap6y7/view_users.php on line 206
+[21-Aug-2011 23:44:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 157
+[21-Aug-2011 23:44:23] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 185
+[21-Aug-2011 23:47:19] PHP Warning:  mysql_free_result(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/view_users.php on line 186
+[25-Aug-2011 12:59:01] PHP Parse error:  syntax error, unexpected T_STRING in /home/aromero/public_html/cap6y7/register.php on line 250
+[25-Aug-2011 13:24:23] PHP Warning:  Wrong parameter count for substr() in /home/aromero/public_html/cap6y7/register.php on line 242
+[25-Aug-2011 13:24:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:11) in /home/aromero/public_html/cap6y7/register.php on line 250
+[25-Aug-2011 13:25:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/header.inc:11) in /home/aromero/public_html/cap6y7/register.php on line 250
+[27-Aug-2011 12:38:48] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 19
+[27-Aug-2011 12:38:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:19) in /home/aromero/public_html/cap6y7/login.php on line 57
+[27-Aug-2011 13:50:23] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[27-Aug-2011 13:50:23] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 45
+[27-Aug-2011 13:53:47] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[27-Aug-2011 13:53:47] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 45
+[27-Aug-2011 13:54:14] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[27-Aug-2011 13:54:14] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 45
+[27-Aug-2011 13:54:28] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[27-Aug-2011 13:54:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 45
+[27-Aug-2011 14:02:59] PHP Fatal error:  Call to undefined function  authenticate() in /home/aromero/public_html/cap6y7/login.php on line 35
+[27-Aug-2011 14:23:56] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/authentication.php on line 18
+[27-Aug-2011 14:23:56] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/authentication.php:18) in /home/aromero/public_html/cap6y7/login.php on line 45
+[28-Aug-2011 22:05:19] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[28-Aug-2011 22:05:33] PHP Warning:  mysql_error(): supplied argument is not a valid MySQL-Link resource in /home/aromero/public_html/cap6y7/login.php on line 35
+[28-Aug-2011 22:05:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:35) in /home/aromero/public_html/cap6y7/login.php on line 57
+[28-Aug-2011 22:05:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:35) in /home/aromero/public_html/cap6y7/login.php on line 58
+[28-Aug-2011 22:05:33] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[28-Aug-2011 22:11:19] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 65
+[28-Aug-2011 22:27:58] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[28-Aug-2011 22:29:57] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[29-Aug-2011 20:42:38] PHP Parse error:  syntax error, unexpected '}' in /home/aromero/public_html/cap6y7/login.php on line 64
+[29-Aug-2011 20:45:55] PHP Parse error:  syntax error, unexpected $end in /home/aromero/public_html/cap6y7/login.php on line 122
+[29-Aug-2011 20:46:41] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/aromero/public_html/cap6y7/login.php on line 39
+[29-Aug-2011 20:46:41] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[29-Aug-2011 20:47:21] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/aromero/public_html/cap6y7/login.php on line 67
+[29-Aug-2011 20:55:17] PHP Fatal error:  Cannot use [] for reading in /home/aromero/public_html/cap6y7/login.php on line 47
+[29-Aug-2011 21:02:05] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'aromero'@'localhost' (using password: NO) in /home/aromero/public_html/cap6y7/login.php on line 37
+[29-Aug-2011 21:02:05] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/aromero/public_html/cap6y7/login.php on line 37
+[29-Aug-2011 21:03:30] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:35) in /home/aromero/public_html/cap6y7/login.php on line 57
+[29-Aug-2011 21:04:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:35) in /home/aromero/public_html/cap6y7/login.php on line 57
+[29-Aug-2011 21:05:38] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:36) in /home/aromero/public_html/cap6y7/login.php on line 58
+[29-Aug-2011 21:08:04] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:36) in /home/aromero/public_html/cap6y7/login.php on line 58
+[29-Aug-2011 21:10:32] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aromero/public_html/cap6y7/login.php:36) in /home/aromero/public_html/cap6y7/login.php on line 58
+[29-Aug-2011 22:43:47] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/aromero/public_html/cap6y7/handle_comments.php on line 61
